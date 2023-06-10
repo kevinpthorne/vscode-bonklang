@@ -1,0 +1,26 @@
+{
+    "scopeName": "source.bonk",
+    "foldingStartMarker": "\\{\\s*$",
+    "foldingStopMarker": "^\\s*\\}",
+    "name": "bonklang",
+    "patterns": [
+        {
+            "include": "#comment"
+        }
+    ],
+    "repository": {
+        "comments": {
+            "patterns": [
+				{
+					"captures": {
+						"1": {
+							"name": "comment.line.double-slash"
+						}
+					},
+					"match": ".*(//.*)\\n",
+					"name": "comment.line.double-slash"
+				}
+            ]
+        }
+    }
+}
